@@ -1,0 +1,25 @@
+{
+  "name": "assignment2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio run ./wdio.conf.js",
+    "allspecs": "wdio run ./wdio.conf.js --suite allspecs",
+    "allureReport": "allure generate allure-results --clean && allure open"
+
+  },
+  "keywords": [],
+  "author": "Aritra",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^9.2.2",
+    "@wdio/cli": "^9.2.11",
+    "@wdio/local-runner": "^9.2.11",
+    "@wdio/mocha-framework": "^9.2.8",
+    "@wdio/visual-service": "^6.2.2"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.32.0"
+  }
+}
